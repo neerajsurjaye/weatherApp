@@ -1,0 +1,23 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "Commit 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neerajsurjaye/weatherApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neerajsurjaye/weatherApp/issues"
+  },
+  "homepage": "https://github.com/neerajsurjaye/weatherApp#readme",
+  "devDependencies": {
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.0"
+  }
+}
