@@ -1,1 +1,3 @@
-console.log("ran");
+import { weather } from "./weather";
+
+weather.getWeather();

@@ -1,1 +1,1 @@
-console.log("ran");
+(()=>{"use strict";(()=>{let e=async e=>{let a=await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${e}&APPID=beb1e557a80ba5ac12c07a6650a5b8e8`,{mode:"cors"});return a=await a.json(),a};return{fetchWeather:e,getWeather:async()=>{let a=await e("betul"),t={city:a.name,weather:a.weather[0].main,description:a.weather[0].description,sys:a.sys,main:a.main};console.log(a,t)}}})().getWeather()})();
