@@ -10,18 +10,31 @@
 
 <body>
     <div id="header">
+        <h1>Project:Weather</h1>
         <div id="search-box">
-            <input type="text">
-            <div id="serch-button"></div>
+            <input type="text" id="city-input">
+            <div id="search-button"></div>
         </div>
-        <div id="main">
-            <div id="weather-box">
+    </div>
 
+    <div id="main">
+        <div id="weather-box">
+            <div id="wHeader">
+                <label id="wName"></label>
+                <label id="wCondition"></label>
+            </div>
+
+            <div id=wMid>
+                <label id="wTemp"></label>
+                <div id="tempBox">
+                    <input type="checkbox" id="toFar">
+                    <label>To Fahrenheit</label>
+                </div>
             </div>
         </div>
     </div>
 
-    <script src="./main.js"></script>
+    <script src=" ./main.js"></script>
 </body>
 
 </html>
