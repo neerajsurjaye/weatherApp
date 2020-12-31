@@ -21,12 +21,17 @@ let handler = (() => {
         let wCondition = document.getElementById("wCondition");
         let wTemp = document.getElementById("wTemp");
 
-        console.log(weatherData);
-        wName.textContent = weatherData.city;
-        wCondition.textContent = weatherData.description;
-        wTemp.textContent = weather.toCelcius(weatherData.main.temp);
-        temp = weatherData.main.temp;
-        document.getElementById("toFar").checked = false;
+        if (weatherData === "not-found") {
+            wName.textContent = "NotFound";
+            wCondition.textContent = "NotFound";
+            wTemp.textContent = "NotFound";
+        } else {
+            wName.textContent = weatherData.city;
+            wCondition.textContent = weatherData.description;
+            wTemp.textContent = weather.toCelcius(weatherData.main.temp);
+            temp = weatherData.main.temp;
+            document.getElementById("toFar").checked = false;
+        }
     }
 
     let changeTemp = (e) => {
