@@ -44,7 +44,19 @@ let weather = (() => {
         return weatherData;
     }
 
-    return { fetchWeather, getWeather };
+    let toCelcius = (temp) => {
+        let a = temp - 273.15;
+        a = a.toFixed(2);
+        return a + "C"
+    }
+
+    let toFaren = (temp) => {
+        let a = ((temp - 273.15) * 9 / 5) + 32;
+        a = a.toFixed(2);
+        return a + "F"
+    }
+
+    return { fetchWeather, getWeather, toCelcius, toFaren };
 })();
 
 export { weather };
