@@ -15,7 +15,7 @@ let weather = (() => {
 
         // });
 
-        let data = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=beb1e557a80ba5ac12c07a6650a5b8e8`, {
+        let data = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=beb1e557a80ba5ac12c07a6650a5b8e8`, {
             mode: "cors",
         });
 
