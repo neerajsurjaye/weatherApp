@@ -1,3 +1,4 @@
 import { weather } from "./weather";
+import { handler } from "./domHandler";
 
-weather.getWeather();
+handler.init();

@@ -25,18 +25,23 @@ let weather = (() => {
     };
 
 
-    let getWeather = async () => {
-        let data = await fetchWeather("betul");
+    let getWeather = async (city) => {
+        let weatherData;
+        try {
+            let data = await fetchWeather(city);
 
-        let weatherData = {
-            city: data.name,
-            weather: data.weather[0].main,
-            description: data.weather[0].description,
-            sys: data.sys,
-            main: data.main,
-        };
+            weatherData = {
+                city: data.name,
+                weather: data.weather[0].main,
+                description: data.weather[0].description,
+                sys: data.sys,
+                main: data.main,
+            };
+        } catch {
+            weatherData = "not-found";
+        }
 
-        console.log(data, weatherData);
+        return weatherData;
     }
 
     return { fetchWeather, getWeather };
