@@ -6,7 +6,7 @@ body{
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #379683;
+    background-color: #212121;
 }
 
 
@@ -15,9 +15,9 @@ body{
     flex-direction: column;
     width: 100%;
     height: 30%;
-    background-color: #5cdb95;
+    background-color: #323232;
     align-items: center;
-    color: #05386b;
+    color: #14ffec;
     justify-content: center;
 }
 
@@ -30,7 +30,8 @@ body{
     border: none;
     padding: 0 12px;
     text-transform: capitalize;
-    background-color: #bee4af;
+    background-color: #222;
+    color: white;
 
 }
 
@@ -39,11 +40,11 @@ body{
     height: 30px;
     border-radius: 8px;
     overflow: hidden;
-    border: 2px solid #05386b;
+    border: 2px solid #0d7377;
 }
 
 #search-button{
-    background-color: #05386b;
+    background-color: #0d7377;
     width: 30px;
     height: 30px;
     cursor: pointer;
@@ -64,7 +65,7 @@ body{
 
 #weather-box{
     width: 350px;
-    background-color: #05386b;
+    background-color: #0d7377;
     margin-top: 32px;
     border-radius: 8px;
 }
